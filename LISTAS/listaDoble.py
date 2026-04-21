@@ -75,16 +75,28 @@ class listaDoble:
 
     def eliminar(self, dato):
         actual = self.cabeza
-        anterior = None
         while actual:
             if actual.dato == dato:
-                if anterior:
-                    anterior.siguiente = actual.siguiente
-                else:
+
+                if actual == self.cabeza and actual == self.cola:
+                    self.cabeza = None
+                    self.cola = None
+                
+                elif actual == self.cabeza:
                     self.cabeza = actual.siguiente
+                    self.cabeza.anterior = None
+                
+                elif actual == self.cola:
+                    self.cola = actual.anterior
+                    self.cola.siguiente = None
+                
+                else:
+                    actual.anterior.siguiente = actual.siguiente
+                    actual.siguiente.anterior = actual.anterior
+                
                 return True
-            anterior = actual
             actual = actual.siguiente
+        return False
 
 #Metodo Actualizar
 
@@ -101,7 +113,7 @@ class listaDoble:
 def iniciar_menu():
     l = listaDoble()
 
-    for x in (10, 20, 30, 40, 50):
+    for x in ("10", "20", "30", "40", "50"):
         l.agregar(x)
     
     while True:
