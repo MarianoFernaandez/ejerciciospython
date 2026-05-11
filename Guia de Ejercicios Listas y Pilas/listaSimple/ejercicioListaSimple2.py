@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # EJERCICIO 02: Cola de impresión con prioridad
-# [AUTOR: GEMINI]
+# [AUTOR: Mariano]
 # ENUNCIADO: Los trabajos "urgente" deben insertarse al inicio de la cola; 
 # los normales al final.
 # ---------------------------------------------------------------------------

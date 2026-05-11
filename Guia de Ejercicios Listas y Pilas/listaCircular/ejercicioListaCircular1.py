@@ -73,18 +73,18 @@ juego.agregar_jugador("Carla")
 juego.agregar_jugador("Diego")
 
 print("\n--- Comienza la partida ---")
-print(f"Turno 1: Juega {juego.siguiente_turno()}") # Debería ser Ana
-print(f"Turno 2: Juega {juego.siguiente_turno()}") # Debería ser Beto
-print(f"Turno 3: Juega {juego.siguiente_turno()}") # Debería ser Carla
+print(f"Turno 1: Juega {juego.siguiente_turno()}") 
+print(f"Turno 2: Juega {juego.siguiente_turno()}") 
+print(f"Turno 3: Juega {juego.siguiente_turno()}") 
 
 # 2. Eliminamos a un jugador en el medio de la partida
 print("\n--- ¡Carla ha sido eliminada del juego! ---")
 juego.eliminar_jugador("Carla")
 
 # 3. Seguimos rotando turnos (debería seguir Diego y luego volver a Ana)
-print(f"Turno 4: Juega {juego.siguiente_turno()}") # Debería ser Diego
-print(f"Turno 5: Juega {juego.siguiente_turno()}") # Debería ser Ana, confirmando que el círculo funciona
-print(f"Turno 6: Juega {juego.siguiente_turno()}") # Debería ser Beto
+print(f"Turno 4: Juega {juego.siguiente_turno()}") 
+print(f"Turno 5: Juega {juego.siguiente_turno()}") 
+print(f"Turno 6: Juega {juego.siguiente_turno()}") 
 
 # 4. Eliminamos al resto hasta que quede un solo jugador
 print("\n--- ¡Diego y Ana son eliminados! ---")

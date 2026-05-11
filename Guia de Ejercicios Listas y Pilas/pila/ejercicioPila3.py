@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # EJERCICIO 03: Simulación de call stack
-# [AUTOR: GEMINI]
+# [AUTOR: ]
 # ENUNCIADO: Simula el call stack lanzando error si supera cierta profundidad.
 # ---------------------------------------------------------------------------
 class CallStack:

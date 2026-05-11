@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # EJERCICIO 01: Navegador web: atrás y adelante
-# [AUTOR: GEMINI]
+# [AUTOR: ]
 # ENUNCIADO: Usa dos pilas. Al visitar página nueva la pila adelante se vacía.
 # ---------------------------------------------------------------------------
 class PilaNavegador:
