@@ -66,6 +66,8 @@ class Historial:
 
             contador += 1
 
+# -----------------------------------------------------------------------------------------------
+
 # Uso esperado:
 miHistorial = Historial()
 miHistorial.visitar("python.org")

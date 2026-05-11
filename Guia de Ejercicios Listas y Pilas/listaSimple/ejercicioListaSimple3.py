@@ -35,7 +35,7 @@ class Playlist:
 
             actual.siguiente = nuevo
 
-   
+
     def cancionSiguiente(self):
         """Avanza el puntero de reproducción a la próxima canción."""
 
@@ -50,7 +50,7 @@ class Playlist:
         else:
             print("Se alcanzo el final de la playlist. La musica se detuvo")
 
-   
+
     def agregar_a_continuacion(self, cancion):
         """Inserta una canción nueva justo después de la que suena ahora."""
 
@@ -91,9 +91,7 @@ class Playlist:
         print(f"Eliminado: {self.reproduciendo.cancion}")
         self.reproduciendo = nodoSiguiente
 
-
-
-
+# ---------------------------------------------------------------------------------------
 
 play = Playlist()
 
@@ -117,11 +115,7 @@ play.agregar_a_continuacion("redhot")
 play.eliminar_actual() 
 
 # VERIFICACIÓN CRÍTICA: ¿Qué está sonando justo después de borrar?
-print(f"Esperado: redhot. Realidad: {play.reproduciendo.cancion}")
+print(f"Esperado: redhot. Actual: {play.reproduciendo.cancion}")
 
 # 5. Ahora sí, avanzamos a la última
-play.cancionSiguiente() # Debería ser MIA
-
-
-                
-        
+play.cancionSiguiente() # Debería ser MIA  
