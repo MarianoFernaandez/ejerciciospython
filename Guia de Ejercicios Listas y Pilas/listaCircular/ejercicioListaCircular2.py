@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 02: Problema de Josephus
-# [AUTOR: TÚ]
-# ENUNCIADO: N personas en círculo. Se cuenta hasta K y se elimina.
-# ---------------------------------------------------------------------------
 class Persona:
     def __init__(self, dato):
         self.dato = dato

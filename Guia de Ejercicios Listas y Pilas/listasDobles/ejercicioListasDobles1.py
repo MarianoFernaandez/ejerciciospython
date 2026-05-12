@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 01: Editor de texto con cursor
-# [AUTOR: GEMINI]
-# ENUNCIADO: El cursor puede moverse arriba/abajo, insertar línea y eliminar actual.
-# ---------------------------------------------------------------------------
 class NodoLinea:
     def __init__(self, texto):
         self.texto = texto

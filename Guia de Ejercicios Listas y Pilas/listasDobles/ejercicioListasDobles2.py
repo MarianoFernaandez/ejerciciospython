@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 02: Sistema undo/redo
-# [AUTOR: GEMINI]
-# ENUNCIADO: Undo retrocede, redo avanza. Nueva acción borra el futuro.
-# ---------------------------------------------------------------------------
 class NodoAccion:
     def __init__(self, accion):
         self.accion = accion

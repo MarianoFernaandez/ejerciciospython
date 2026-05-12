@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 03: Gestión de pacientes en guardia
-# [AUTOR: TÚ]
-# ENUNCIADO: Guardia atiende pacientes según gravedad (1 = crítico, 5 = leve).
-# ---------------------------------------------------------------------------
 class Paciente:
     def __init__(self, nombre, prioridad):
         self.nombre = nombre

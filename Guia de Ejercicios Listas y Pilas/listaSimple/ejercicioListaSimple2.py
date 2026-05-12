@@ -1,9 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 02: Cola de impresión con prioridad
-# [AUTOR: Mariano]
-# ENUNCIADO: Los trabajos "urgente" deben insertarse al inicio de la cola; 
-# los normales al final.
-# ---------------------------------------------------------------------------
 class TrabajoImpresion:
     def __init__(self, usuario, doc, urgente=False):
         self.usuario = usuario

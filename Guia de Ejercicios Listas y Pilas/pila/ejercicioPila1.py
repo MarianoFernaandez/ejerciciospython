@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 01: Navegador web: atrás y adelante
-# [AUTOR: ]
-# ENUNCIADO: Usa dos pilas. Al visitar página nueva la pila adelante se vacía.
-# ---------------------------------------------------------------------------
 class PilaNavegador:
     def __init__(self): self.items = []
     def push(self, item): self.items.append(item)

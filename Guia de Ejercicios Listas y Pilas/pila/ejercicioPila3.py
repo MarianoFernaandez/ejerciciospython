@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 03: Simulación de call stack
-# [AUTOR: ]
-# ENUNCIADO: Simula el call stack lanzando error si supera cierta profundidad.
-# ---------------------------------------------------------------------------
 class CallStack:
     def __init__(self, limite=10):
         self.stack = []
@@ -26,12 +21,10 @@ class CallStack:
 # -----------------------------------------------------------------------------------------------------
 
 print("--- Inicializando Simulación de Call Stack (Límite: 5) ---")
-# Le ponemos un límite pequeño (5) para poder probar el desbordamiento fácilmente
 cs = CallStack(limite=5)
 
 print("\n--- Simulando llamadas recursivas a factorial(4) ---")
 try:
-    # Simulamos que la función factorial se llama a sí misma reduciendo 'n'
     cs.llamar("factorial", {"n": 4}, linea=10)
     cs.llamar("factorial", {"n": 3}, linea=12)
     cs.llamar("factorial", {"n": 2}, linea=12)
@@ -41,8 +34,8 @@ try:
     cs.mostrar_stack()
     
     print("\n--- Las funciones empiezan a retornar (Resolviendo el factorial) ---")
-    print(f"Retorna y sale: {cs.retornar()}") # Retorna factorial(1)
-    print(f"Retorna y sale: {cs.retornar()}") # Retorna factorial(2)
+    print(f"Retorna y sale: {cs.retornar()}") 
+    print(f"Retorna y sale: {cs.retornar()}") 
     
     print("\nEstado del Call Stack tras finalizar las dos últimas llamadas:")
     cs.mostrar_stack()
@@ -53,7 +46,6 @@ try:
     cs.llamar("otra_funcion", {"x": 2}, linea=21)
     cs.llamar("otra_funcion", {"x": 3}, linea=22)
     
-    # Esta última llamada superará el límite de 5
     cs.llamar("funcion_fatal", {}, linea=99) 
 
 except RecursionError as e:

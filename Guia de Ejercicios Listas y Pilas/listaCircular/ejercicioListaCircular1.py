@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------
-# EJERCICIO 01: Turno rotativo entre jugadores
-# [AUTOR: GEMINI]
-# ENUNCIADO: En un juego de mesa, los jugadores se turnan en ronda.
-# ---------------------------------------------------------------------------
 class NodoJugador:
     def __init__(self, nombre):
         self.nombre = nombre
